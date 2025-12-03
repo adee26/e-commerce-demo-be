@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ecommerce-app-demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerceapp
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  flyway:
+    locations: classpath:db/migration/psql
